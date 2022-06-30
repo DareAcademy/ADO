@@ -1,0 +1,33 @@
+﻿@model ADOSession.Models.Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form method="post">
+        <div>
+            <label>Name</label>
+            <div>
+                <input type="text" asp-for="Name" />
+            </div>
+        </div>
+        <div>
+            <label>Salary</label>
+            <div>
+                <input type="text" asp-for="Salary" />
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Save" asp-action="Save" />
+            <input type="submit" value="Load" asp-action="LoadAll" />
+        </div>
+    </form>
+</body>
+</html>
